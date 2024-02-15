@@ -33,4 +33,4 @@ tags = merge(
     }
   )
 
-
+* Example folder is for how to use this module \\

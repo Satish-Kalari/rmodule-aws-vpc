@@ -71,20 +71,11 @@ resource "aws_subnet" "database" {
 resource "aws_db_subnet_group" "default" {
   name       = local.name
   subnet_ids = aws_subnet.database[*].id
-  engine     = "dynamodb"
+  
   tags = {
     Name = "${local.name}"
   }
 }
-
-# resource "aws_db_subnet_group" "db_subnets_group" {
-#   name = "aws_database_subnet"
-#   # subnet_ids = [aws_subnet.database[count.index].id]
-#   subnet_ids = aws_subnet.database[*].id
-#   tags = {
-#     Name = "My DB subnet group"
-#   }
-# }
 
 # eip is for NAT gateway
 resource "aws_eip" "eip" {
