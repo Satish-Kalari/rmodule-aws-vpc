@@ -1,5 +1,5 @@
 module "roboshop" {
-    #source = "../rmodule-aws-vpc"
+    #source = "../../rmodule-aws-vpc"
     #source = "git::https://github.com/daws-76s/terraform-aws-vpc.git?ref=main"
     source = "git::https://github.com/Satish-Kalari/rmodule-aws-vpc.git?ref=master"
     project_name = var.project_name
