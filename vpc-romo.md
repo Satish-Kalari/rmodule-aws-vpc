@@ -6,9 +6,9 @@ Create:
 4).  Route tables
 5).  Routes for Route tables 
 6)   Associate routes with subnets
-7).  elastic ip (eip)
-8).  NAT gateway
-9)   Add  NAT gateway route in private and database subnets [only-incoming-internet-access-for-private-database-subnets]
+7).  elastic ip (eip) ***( eip is for NAT gateway)***
+8).  NAT gateway ***(NAT gate way should be in any public subnet for internet access)***
+9)   Add  NAT gateway route in private and database subnets ***[only-incoming-internet-access-for-private-database subnets]***
 10). Peering connection between two VPCs
 11). Routes 
 
